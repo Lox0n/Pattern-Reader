@@ -14,6 +14,7 @@
 static constexpr auto WEBSITE_URL = L"http://localhost/Patterns.txt";
 static constexpr auto DOWNLOAD_TO_FILE = false;
 
+//https://github.com/spirthack/CSGOSimple/blob/ce77886d094596138f4a63d355250834744b6a75/CSGOSimple/helpers/utils.cpp#L226
 std::uint8_t* PatternScan(void* module, const char* signature)
 {
 	static auto pattern_to_byte = [](const char* pattern) {
